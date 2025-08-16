@@ -1,4 +1,4 @@
-# Repositorio para MDS7202 - [Tu Nombre]
+# Repositorio para MDS7202 
 
 Este repositorio contiene todas las evaluaciones del curso "Laboratorio de Programación Científica para Ciencia de Datos" (MDS7202) Primavera 2025.
 
