@@ -1,0 +1,15 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Notebooks y scripts de entrenamiento
+*.ipynb
+optimize.py
+
+# Datos y modelos locales (se montan como volumen)
+mlruns/
+water_potability.csv
+
+# Metadatos de Git y OS
+.git*
+.DS_Store

@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/hayte/Desktop/TAREAS/LABCD_2/lab-programacion-cientifica-para-ciencia-de-datos/lab8/mlruns/104866332161173106/d26f4c6b5601464abfb6332e9f7ddd5f/artifacts
+end_time: 1761049701509
+entry_point_name: ''
+experiment_id: '104866332161173106'
+lifecycle_stage: active
+run_id: d26f4c6b5601464abfb6332e9f7ddd5f
+run_name: XGB_Trial_19_LR_0.204_Depth_5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1761049687346
+status: 3
+tags: []
+user_id: hayte

@@ -1,0 +1,9 @@
+digest: 822075a1
+name: dataset
+profile: '{"features_shape": [2620, 9], "features_size": 23580, "features_nbytes":
+  94320}'
+schema: '{"mlflow_tensorspec": {"features": "[{\"type\": \"tensor\", \"tensor-spec\":
+  {\"dtype\": \"float32\", \"shape\": [-1, 9]}}]", "targets": null}}'
+source: '{"tags": {"mlflow.user": "hayte", "mlflow.source.name": "optimize.py", "mlflow.source.type":
+  "LOCAL", "mlflow.source.git.commit": "0e97b5fb6cdaf4d58cc9c0afaba311f392d18e8d"}}'
+source_type: code
