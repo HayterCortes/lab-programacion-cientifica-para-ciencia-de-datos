@@ -1,0 +1,6 @@
+fastapi
+uvicorn[standard]
+mlflow-skinny
+pandas
+scikit-learn
+xgboost

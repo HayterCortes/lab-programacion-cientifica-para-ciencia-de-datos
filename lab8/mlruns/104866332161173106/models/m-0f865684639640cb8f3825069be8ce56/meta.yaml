@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/hayte/Desktop/TAREAS/LABCD_2/lab-programacion-cientifica-para-ciencia-de-datos/lab8/mlruns/104866332161173106/models/m-0f865684639640cb8f3825069be8ce56/artifacts
+creation_timestamp: 1761049452573
+experiment_id: '104866332161173106'
+last_updated_timestamp: 1761049462395
+model_id: m-0f865684639640cb8f3825069be8ce56
+model_type: null
+name: model
+source_run_id: 4dcdd3363fd348e2a66f35ed19b4d23f
+status: 2
+status_message: null
