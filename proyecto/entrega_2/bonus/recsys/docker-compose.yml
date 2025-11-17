@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+  # Servicio 1: El Backend (con nombre único)
+  backend-recsys:
+    build: ./backend
+    ports:
+      - "8001:8000" # Usamos el puerto 8001 para no chocar con la app principal
+    volumes:
+      # Montamos el archivo de transacciones original
+      - ../../data/transacciones.parquet:/app/data/transacciones.parquet
+
+  # Servicio 2: El Frontend (con nombre único)
+  frontend-recsys:
+    build: ./frontend
+    ports:
+      - "7861:7860" # Usamos el puerto 7861 para no chocar con la app principal
+    depends_on:
+      - backend-recsys
