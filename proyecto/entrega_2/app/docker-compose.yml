@@ -1,0 +1,21 @@
+version: "3.8"
+
+services:
+  # Servicio 1: El Backend
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000" # Exponer el puerto de la API al host (para debugging)
+    volumes:
+      # ¡Este es el "pegamento"!
+      # Mapea la carpeta de predicciones (del host/WSL)
+      # dentro del contenedor en /app/data/
+      - ../predictions:/app/data
+
+  # Servicio 2: El Frontend
+  frontend:
+    build: ./frontend
+    ports:
+      - "7860:7860" # Exponer el puerto de Gradio al host
+    depends_on:
+      - backend # Asegurarse de que el backend inicie primero

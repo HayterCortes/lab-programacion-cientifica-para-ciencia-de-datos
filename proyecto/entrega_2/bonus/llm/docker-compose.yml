@@ -1,0 +1,20 @@
+version: "3.8"
+
+services:
+  # Servicio 1: El Backend (con nombre único)
+  backend-llm:
+    build: ./backend
+    ports:
+      - "8002:8000" # Usamos el puerto 8002 (para no chocar con RecSys o App)
+    volumes:
+      # Montamos los dos archivos de datos que el backend necesita
+      - ../../data/transacciones.parquet:/app/data/transacciones.parquet
+      - ../../data/clientes.parquet:/app/data/clientes.parquet
+
+  # Servicio 2: El Frontend (con nombre único)
+  frontend-llm:
+    build: ./frontend
+    ports:
+      - "7862:7860" # Usamos el puerto 7862 (para no chocar con RecSys o App)
+    depends_on:
+      - backend-llm
